@@ -53,7 +53,7 @@ test:
 about:
   home: https://github.com/gruns/furl
   license_file: LICENSE.md
-  license: PUBLIC-DOMAIN
+  license: Unlicense
   license_family: Other
   summary: Furl is a small Python library that makes parsing and manipulating URLs easy
   description: Furl makes parsing and manipulating URLs easy
@@ -63,3 +63,5 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+  skip-lints:
+    - patch_unnecessary
