@@ -45,9 +45,9 @@ test:
     - furl.compat
     - furl.omdict1D
   commands:
-  - pip check
-  - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-  - pytest tests -vv --color=yes -k "not ({{ skip_broken_tests | join(' or ') }})"
+    - pip check
+    - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
+    - pytest tests -vv --color=yes -k "not ({{ skip_broken_tests | join(' or ') }})"
 
 about:
   home: https://github.com/gruns/furl
