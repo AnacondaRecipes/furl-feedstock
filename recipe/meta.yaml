@@ -37,8 +37,6 @@ test:
   source_files:
     - tests
   requires:
-    - flake8
-    - six >=1.8.0
     - pytest
     - pip
   imports:
@@ -63,5 +61,3 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
-  skip-lints:
-    - patch_unnecessary
